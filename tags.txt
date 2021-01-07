@@ -1,0 +1,83 @@
+<meta name="author" content="Chris">
+
+name은 메타 요소고 어떤 정보의 형태를 갖고 있는지 알려줌
+content는 실제 메타데이터의 컨텐츠
+
+<link> 문서의 head부분에 위치
+<link rel="stylesheet" href="my-css-file.css">
+<script src="my-js-file.js"></script>
+
+<html lang="ko">
+
+<i>:외국어
+<b>:굵은 글씨
+<u>:밑줄
+
+<img src="mozilla-image.png" alt="mozila logo that links to the moxilla homepage">
+
+Document fragments
+
+문서 상단이 아닌 html 문서 내부의 특정 부분에 링크 할 수 있다.
+링크를 시키고 싶은 태그에 id속성을 넣어 주어야한다.
+일반적으로는 특정 헤드라인에 연결한느 것이 타당하다.
+
+ link test: Download Firefox
+
+<p><a href="https://firefox.com/">
+  Download Firefox
+</a></p>
+Bad link text: Click here to download Firefox
+
+<p><a href="https://firefox.com/">
+  Click here
+</a>
+to download Firefox</p>
+
+<p><a href="http://www.example.com/large-report.pdf"?
+Download the sales report (PDF, 10MB)
+</a></p>
+
+<p><a href="http://www.example.com/video-stream/">
+Watch the video(stream opens in separate tab, HDquality)
+
+<p><a href="http://www.example.com/car-game">
+Play the car game(requires Flash)
+</a></p>
+
+다운로드 연결 시 download attribute 사용
+브라우저에서 열지 않고 다운로드할 리소스에 연결하는 경우 다운로드 속성을 사용하여
+기본 저장 파일 이름을 제공할 수 있다.
+
+Firefox 39의 Windows 버전에 대한 다운로드 링크가 있는 예:
+
+<a href="https://download.mozilla.org/?product=firefox-39.0-SSL&os=win&lang=en-US" download="firefox-39-installer.exe">
+
+
+<Description lists>
+다른 타입의 리스트와 다르게 <dl> 태그를 사용
+용어, 질문과 같은 상위 항목은 <dt> (description term) 요소를 사용하고,
+정의, 답변과 같은 하위 항목은 <dd> (description definition) 요소를 사용
+
+
+<Blockquotes>
+블록 레벨 컨텐츠의 섹션(문단, 여러 단락, 리스트등)이 인용된 경우, 이를 나타내는 <blockquote>요소로 감싸야함.
+cite 속성에 출처를 표기
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  <p>The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or <em>HTML Block
+  Quotation Element</em>) indicates that the enclosed text is an extended quotation.</p>
+</blockquote>
+
+<Inline quotations>
+인라인 인용구는 <q> 요소를 사용한다는 점만 제외하면 블럭 인용구와 동일하게 동작
+
+
+
+
+
+
+<p>Hello and welcome to my motivation page. As Confucius once said:</p>
+
+<p>It does not matter how slowly you go as long as you do not stop.</p>
+
+<p>I also love the concept of positive thinking, and The Need To Eliminate Negative Self Talk
+(as mentioned in Affirmations for Positive Thinking.)</p>
